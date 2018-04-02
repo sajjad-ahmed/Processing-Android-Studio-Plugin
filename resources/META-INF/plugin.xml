@@ -1,0 +1,40 @@
+<idea-plugin>
+    <id>com.niloy.processing.android</id>
+    <name>Processing for Android Studio</name>
+    <version>1.0</version>
+    <vendor email="support@niloy.net" url="http://www.niloy.net">Niloy</vendor>
+
+    <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    -->
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.niloy.processing.android.MainToolbarAction" class="Core.MainAction"
+                text="Processing Activity"
+                icon="/assets/icon.png" description="Create Processing activity">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+
+</idea-plugin>
